@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="contenedor">
+        <section class="contenedor__encriptador">
+          <form>
+            <h1>Ingrese el texto aqui</h1>
+            <textarea id="textoInput" cols="30" rows="10"></textarea>
+          </form>
+          <div class="contenedor__encriptador__accion">
+            <div class="contenedor__encriptador__accion__exclamacion">
+              <img src="img/logo-exclamacion.png" alt="logo de exclamacion" />
+              <p>NO ACENTOS NI CARACTERES ESPECIALES</p>
+            </div>
+            <div class="contenedor__encriptador__accion__botones">
+              <button type="button" id="botonEncriptar" class="boton">
+                Encriptar
+              </button>
+              <button
+                type="button"
+                id="botonDesencriptar"
+                class="boton boton--transparente"
+              >
+                Desencriptar
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="contenedor__resultado">
+          <div id="contenedorVacio">
+            <img src="img/muñeco.png" alt="muñeco" />
+            <h3>Ningún mensaje fue encontrado</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+          <div id="contenedorResultado">
+            <p id="resultado"></p>
+            <button
+              type="button"
+              id="botonCopiar"
+              class="boton boton--transparente"
+            >
+              Copiar
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
